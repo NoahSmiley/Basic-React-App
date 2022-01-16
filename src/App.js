@@ -1,15 +1,10 @@
 import React from 'react';
-
+import Base from './Components/Base';
 function App() {
   return (
     <div style={{ textAlign: 'center' }}>
       <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+        <Base/>
       </header>
     </div>
   );
