@@ -20,11 +20,12 @@ const Base = () => {
 
     console.log(data);
     let dataManipulation = [];
+
     for (const key in data) {
       dataManipulation.push({
         id: key,
-        name: data[key].post,
-        age: data[key].title,
+        name: data[key].name,
+        age: data[key].age,
       });
     }
     setList(dataManipulation);
