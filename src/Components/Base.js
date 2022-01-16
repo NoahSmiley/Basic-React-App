@@ -18,7 +18,6 @@ const Base = () => {
     );
     const data = await response.json();
 
-    console.log(data);
     let dataManipulation = [];
 
     for (const key in data) {
@@ -38,7 +37,7 @@ const Base = () => {
         method: "POST",
         body: JSON.stringify(item),
         headers: {
-          "content-Type": "application/json",
+          "Content-Type": "application/json",
         },
       }
     );

@@ -7,14 +7,20 @@ const FormComponent = (props) => {
   const changeNameHandler = (event) => {
     setName(event.target.value);
   };
+  
   const changeAgeHandler = (event) => {
     setAge(event.target.value);
   };
+
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onAdd(name, age);
-    setName("");
-    setAge("");
+    if (name !== "" && age !== "") {
+      props.onAdd(name, age);
+      setName("");
+      setAge("");
+    } else {
+      alert("empty form submission!");
+    }
   };
 
   return (

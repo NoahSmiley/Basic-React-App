@@ -7,7 +7,6 @@ const ListComponent = (props) => {
       </div>
     );
   });
-
   return <div>{listComponent}</div>;
 };
 export default ListComponent;
