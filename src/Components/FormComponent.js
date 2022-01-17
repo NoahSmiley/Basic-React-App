@@ -7,7 +7,7 @@ const FormComponent = (props) => {
   const changeNameHandler = (event) => {
     setName(event.target.value);
   };
-  
+
   const changeAgeHandler = (event) => {
     setAge(event.target.value);
   };

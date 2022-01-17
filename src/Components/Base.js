@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FormComponent from "./FormComponent";
 import ListComponent from "./ListComponent";
 const Base = () => {
+
   const [list, setList] = useState([]);
 
   const addItemHandler = (name, age) => {
     setList((prevList) => {
       return [...prevList, { name: name, age: age }];
     });
+
     postData({ name: name, age: age });
-    console.log(list);
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fetchData();
+    }, 5000);
+    return () => clearTimeout(timer)
+  }, [list]);
 
   const fetchData = async () => {
     const response = await fetch(
@@ -42,7 +50,6 @@ const Base = () => {
       }
     );
     const data = await response.json();
-    console.log(data);
   };
 
   return (
