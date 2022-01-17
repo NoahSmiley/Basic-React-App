@@ -8,7 +8,6 @@ const ListComponent = (props) => {
       </div>
     );
   });
-  console.log("listComponent ran")
   return <div>{listComponent}</div>;
 };
 export default ListComponent;

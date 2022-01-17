@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#app {
+
+}
+
+.navbar {
+    display: block;
+    background-color: #0f0f0f;
+    height: 6vh;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+.navbar-item {
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.navbar-item:hover {
+    background-color: rgb(105, 31, 31);
+}
+
+.navbar-link {
+    
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar-link:visited {
+    text-decoration: default;
+}
+
+.navbar-link:active {
+    text-decoration: default;
+}
+
+.navbar-link-box {
+    height: 100%;
+    position: relative;
+}
+
+.navbar-link-text {
+    
+}
